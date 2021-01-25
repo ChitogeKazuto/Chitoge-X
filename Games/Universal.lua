@@ -1,2 +1,2 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Nebula-X/NebuleX/Ui%20Library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/Ui.lua"))()
 local ChitogeX = Library.new("Chitoge X [Demo]")
