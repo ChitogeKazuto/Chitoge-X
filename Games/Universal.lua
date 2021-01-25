@@ -19,6 +19,7 @@ JumpPowerSettings = {
     NJump = game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower
 }
 
+wait(0.1)
 WalkSpeedSection:addSlider("Value", WalkSpeedSettings.NSpeed, 0, 300, function(Value) -- WalkSpeed
     _G.Speed = Value
 end)
