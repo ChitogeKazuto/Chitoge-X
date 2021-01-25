@@ -53,7 +53,7 @@ JumpSection:addToggle("Fly Jump", false, function(Value)
     if Value == true then
 	if flyjump then flyjump:Disconnect() end
 	flyjump = game:GetService("UserInputService").JumpRequest:Connect(function(Jump)
-		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+		game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
     end)
 else
     if flyjump then flyjump:Disconnect() end
