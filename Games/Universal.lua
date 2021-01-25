@@ -67,7 +67,7 @@ local SettingsPage = ChitogeX:addPage("Settings", 4483345737)
 local SettingsSection = SettingsPage:addSection("Settings")
 
 SettingsSection:addKeybind("Ui Toggle", Enum.KeyCode.RightControl, function()
-    NebuleX:toggle()
+    ChitogeX:toggle()
 end)
 
 SettingsSection:addButton("Destroy Ui", function()
