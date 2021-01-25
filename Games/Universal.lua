@@ -19,7 +19,6 @@ JumpPowerSettings = {
     NJump = game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower
 }
 
-
 WalkSpeedSection:addSlider("Value", WalkSpeedSettings.NSpeed, 0, 300, function(Value) -- WalkSpeed
     _G.Speed = Value
 end)
@@ -66,3 +65,5 @@ if Value == true then
         Clip = true
     end
 end)
+
+ChitogeX:SelectPage(NebuleX.pages[2], true)
