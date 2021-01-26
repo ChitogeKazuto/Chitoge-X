@@ -1,11 +1,6 @@
 local XLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/Ui.lua"))()
 local ChitogeX = XLibrary.new("Chitoge X")
 
-local ALLPLAYER = {}
-for i,v in pairs(game:GetService("Players"):GetChildren()) do
-    table.insert(ALLPLAYER, v.Name)
-end
-
 WalkSpeedSettings = {
     NSpeed = game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed
 }
@@ -17,7 +12,7 @@ JumpPowerSettings = {
 local LocalPlayerPage = ChitogeX:addPage("LocalPlayer", 4384401919)
 
 local WalkSpeedSection = LocalPlayerPage:addSection("WalkSpeed")
-WalkSpeedSection:addSlider("Speed", WalkSpeedSettings.NSpeed, 0, 300, function(Value)
+WalkSpeedSection:addSlider("Value", WalkSpeedSettings.NSpeed, 0, 300, function(Value)
     _G.Speed = Value
 end)
 WalkSpeedSection:addToggle("Enable WalkSpeed", false, function(Value)
@@ -31,7 +26,7 @@ WalkSpeedSection:addToggle("Enable WalkSpeed", false, function(Value)
 end)
 
 local JumpPowerSection = LocalPlayerPage:addSection("JumpPower")
-JumpPowerSection:addSlider("Jump", JumpPowerSettings.NJump, 0, 300, function(Value)
+JumpPowerSection:addSlider("Value", JumpPowerSettings.NJump, 0, 300, function(Value)
     _G.Jump = Value
 end)
 JumpPowerSection:addToggle("Enable JumpPower", false, function(Value)
@@ -62,7 +57,7 @@ end)
 
 local NoClipSection = MiscPage:addSection("No Clip")
 
-NoClipSection:addToggle("No Clip", false, function(Value)
+NoClipSection:addToggle("Classic No Clip", false, function(Value)
 noclip = true 
     game:GetService('RunService').Stepped:connect(function()
     if noclip then
@@ -75,11 +70,9 @@ noclip = true
         noclip = false 
     end
 end)
-
 NoClipSection:addToggle("Advance No Clip", false, function(Value)
 local Noclipping = nil
 Clip = false
-
 if Value == true then
 local function NoclipLoop()
 		if Clip == false and game:GetService("Players").LocalPlayer.Character ~= nil then
@@ -97,4 +90,24 @@ else
 	end
     Clip = true
 end
+end)
+
+local TelepotSection = MiscPage:addSection("Telepot")
+
+TelepotSection:addToggle("Enable Keybind TP", false, function(Value)
+    _G.EnableKeybindTP = Value
+end)
+TelepotSection:addKeybind("Keybind TP", Enum.KeyCode.G,function()
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse() 
+    if _G.EnableKeybindTP then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Mouse.hit.p)
+    end
+end)
+
+local SettingsPage = ChitogeX:addPage("Settings", 4483345737)
+
+local SettingsSection = SettingsPage:addSection("Settings")
+SettingsSection:addKeybind("Toggle Ui", Enum.KeyCode.RightShift, function()
+    ChitogeX:toggle()
 end)
