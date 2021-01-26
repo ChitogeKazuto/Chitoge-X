@@ -5,5 +5,9 @@ if _G.Key == "ZegR9tXUjUwPYzD" then
         else
             loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/Games/Universal/Ui2_Universal.lua",true))()
         end
+    else
+        game:GetService("Players").LocalPlayer:Kick("Invalid Whitelist")
     end
+else
+    game:GetService("Players").LocalPlayer:Kick("Invalid Whitelist")
 end
