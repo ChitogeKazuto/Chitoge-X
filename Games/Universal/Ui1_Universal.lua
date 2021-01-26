@@ -1,4 +1,4 @@
-local XLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/Ui.lua"))()
+local XLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/Ui1.lua"))()
 local ChitogeX = XLibrary.new("Chitoge X")
 
 WalkSpeedSettings = {
