@@ -12,7 +12,7 @@ JumpPowerSettings = {
 local LocalPlayerPage = ChitogeX:addPage("LocalPlayer", 4384401919)
 
 local WalkSpeedSection = LocalPlayerPage:addSection("WalkSpeed")
-WalkSpeedSection:addSlider("Value", WalkSpeedSettings.NSpeed, 0, 300, function(Value)
+WalkSpeedSection:addSlider("Value", 16, 0, 300, function(Value)
     _G.Speed = Value
 end)
 WalkSpeedSection:addToggle("Enable WalkSpeed", false, function(Value)
@@ -26,7 +26,7 @@ WalkSpeedSection:addToggle("Enable WalkSpeed", false, function(Value)
 end)
 
 local JumpPowerSection = LocalPlayerPage:addSection("JumpPower")
-JumpPowerSection:addSlider("Value", JumpPowerSettings.NJump, 0, 300, function(Value)
+JumpPowerSection:addSlider("Value", 16, 0, 300, function(Value)
     _G.Jump = Value
 end)
 JumpPowerSection:addToggle("Enable JumpPower", false, function(Value)
