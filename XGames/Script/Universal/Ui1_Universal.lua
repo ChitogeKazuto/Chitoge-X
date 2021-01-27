@@ -99,7 +99,7 @@ else
 end
 end)
 
-local TelepotSection = MiscPage:addSection("Mouse Telepot")
+local TelepotSection = MiscPage:addSection("Mouse Telepots")
 
 TelepotSection:addToggle("Enable Keybind TP", false, function(Value)
     _G.EnableKeybindTP = Value
