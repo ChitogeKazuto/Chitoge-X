@@ -8,7 +8,7 @@ JumpPowerSettings = {
     NJump = game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower
 }
 
-local Main = Library:CreateWindow("ChitogeX | Main")
+local Main = Library:CreateWindow("Chitoge X | Main")
 
 local LocalPlayerFolder = Main:AddFolder("LocalPlayer")
 
