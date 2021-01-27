@@ -1,4 +1,4 @@
-if _G.Key == "pOJ2eNGr52jlpKT" then
+if _G.Key == "__pOJ2eNGr52jlpKT__" then
     if game.PlaceId == 537413528 then
         if _G.Ui == 1 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/XGames/Script/Build%20A%20Boat/Ui1.Build%20A%20Boat.lua",true))()
