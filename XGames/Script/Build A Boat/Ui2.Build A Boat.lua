@@ -109,7 +109,7 @@ local Mouse = Plr:GetMouse()
     end
 end})
 
-local BABAutoFarm = Library:CreateWindow("Build A Boat ")
+local BABAutoFarm = Library:CreateWindow("Build A Boat")
 
 local AutoFarmFolder = BABAutoFarm:AddFolder("Auto Farm")
 
@@ -157,7 +157,7 @@ end})
 
 local BABMiscFolder = BABAutoFarm:AddFolder("Misc")
 
-BABMiscFolder:AddList({text = "Base Telepot", values = {"White","Red","Black","Green","Blue","Yellow","Pink"}, callback = function(Value)
+BABMiscFolder:AddList({text = "Base Telepots", values = {"White","Red","Black","Green","Blue","Yellow","Pink"}, callback = function(Value)
     if Value == "White" then
         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50.8146, -9.7, -500.2)
     elseif Value == "Red" then
