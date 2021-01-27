@@ -18,4 +18,4 @@ if _G.Key == "ZegR9tXUjUwPYzD" then
     end
 else
     game:GetService("Players").LocalPlayer:Kick("Invalid Whitelist")
-enda
+end
