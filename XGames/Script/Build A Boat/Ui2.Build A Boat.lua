@@ -42,8 +42,8 @@ end})
 local MiscFolder = Main:AddFolder("Misc")
 
 MiscFolder:AddLabel({text = "                 Jump"})
-MiscFolder:AddToggle({text = ' Fly Jump', callback = function(Value)
 local flyjump
+MiscFolder:AddToggle({text = ' Fly Jump', callback = function(Value)
 if Value == true then
     if flyjump then flyjump:Disconnect() end
         flyjump = game:GetService("UserInputService").JumpRequest:Connect(function(Jump)
@@ -55,10 +55,10 @@ if Value == true then
 end})
 MiscFolder:AddLabel({text = "                No Clip"})
 MiscFolder:AddToggle({text = ' Classic No Clip', callback = function(Value)
-local noclip = true
+noclip = true 
 game:GetService('RunService').Stepped:connect(function()
-if noclip == true then
-        game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+if noclip then
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
     end
 end)
     if Value == true then
