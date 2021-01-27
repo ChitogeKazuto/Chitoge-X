@@ -54,14 +54,16 @@ if Value == true then
     end
 end})
 MiscFolder:AddLabel({text = "                No Clip"})
-noclip = true 
+noclip = false 
 MiscFolder:AddToggle({text = ' Classic No Clip', callback = function(Value)
+_G.Flyjump = Value
+
 game:GetService('RunService').Stepped:connect(function()
 if noclip then
         game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
     end
 end)
-    if Value == true then
+    if _G.Flyjump == true then
         noclip = true
     else
         noclip = false 
