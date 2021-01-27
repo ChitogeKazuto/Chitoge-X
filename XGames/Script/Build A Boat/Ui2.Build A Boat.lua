@@ -42,15 +42,15 @@ end})
 local MiscFolder = Main:AddFolder("Misc")
 
 MiscFolder:AddLabel({text = "                 Jump"})
-local flyjump
+local flyjumpx
 MiscFolder:AddToggle({text = ' Fly Jump', callback = function(Value)
     if Value == true then
-    if flyjump then flyjump:Disconnect() end
-    flyjump = game:GetService("UserInputService").JumpRequest:Connect(function(Jump)
+    if flyjumpx then flyjumpx:Disconnect() end
+    flyjumpx = game:GetService("UserInputService").JumpRequest:Connect(function(Jump)
         game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
     end)
 else
-    if flyjump then flyjump:Disconnect() end
+    if flyjumpx then flyjumpx:Disconnect() end
 end
 end})
 MiscFolder:AddLabel({text = "                No Clip"})
