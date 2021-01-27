@@ -102,7 +102,7 @@ local Mouse = Plr:GetMouse()
     end
 end})
 
-local BABAutoFarm = Library:CreateWindow("BAB Auto Farm")
+local BABAutoFarm = Library:CreateWindow("Build A Boat ")
 
 local AutoFarmFolder = BABAutoFarm:AddFolder("Auto Farm")
 
@@ -146,6 +146,26 @@ wait(10)
 game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 wait(10)
 end
+end})
+
+local BABMiscFolder = BABAutoFarm:AddFolder("Misc")
+
+BABMiscFolder:AddList({text = "Base Telepot", values = {"White","Red","Black","Green","Blue","Yellow","Pink"}, callback = function(Value)
+    if Value == "White" then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50.8146, -9.7, -500.2)
+    elseif Value == "Red" then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(377.043, -9.7, -65.0704)
+    elseif Value == "Black" then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-482.216, -9.7, -68.9846)
+    elseif Value == "Green" then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-481.95, -9.7, 293.866)
+    elseif Value == "Blue" then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(379.19, -9.7, 300.31)
+    elseif Value == "Yellow" then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-484.445, -9.7, 639.808)
+    elseif Value == "Pink" then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(377.688, -9.7, 646.362)
+    end
 end})
 
 local Settings = Library:CreateWindow("Settings")
