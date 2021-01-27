@@ -1,4 +1,4 @@
-if _G.Key == "hPxNj6cAJWahK8c" then
+if _G.Key == "hPxNj6cAJWahK8cABC" then
     if game:GetService("Players").LocalPlayer.Name == "Undertale_ver" then
         if game.PlaceId == 537413528 then
             if _G.Ui == 1 then
