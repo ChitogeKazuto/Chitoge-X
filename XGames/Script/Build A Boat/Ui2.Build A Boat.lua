@@ -97,7 +97,7 @@ else
 end
 end})
 
-MiscFolder:AddLabel({text = "                Telepot"})
+MiscFolder:AddLabel({text = "               Telepots"})
 MiscFolder:AddToggle({text = ' Enable Keybind TP', callback = function(Value)
     _G.EnableKeybindTP = Value
 end})
