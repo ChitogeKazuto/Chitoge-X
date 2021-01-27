@@ -54,8 +54,8 @@ if Value == true then
     end
 end})
 MiscFolder:AddLabel({text = "                No Clip"})
-MiscFolder:AddToggle({text = ' Classic No Clip', callback = function(Value)
 noclip = true 
+MiscFolder:AddToggle({text = ' Classic No Clip', callback = function(Value)
 game:GetService('RunService').Stepped:connect(function()
 if noclip then
         game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
