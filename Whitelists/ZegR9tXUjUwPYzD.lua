@@ -6,6 +6,10 @@ if _G.Key == "ZegR9tXUjUwPYzD" then
             else
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/XGames/Script/Build%20A%20Boat/Ui2.Build%20A%20Boat.lua",true))()
             end
+        elseif game:GetService("Workspace").AdminSounds.SmiteSound.Name == SmiteSound then
+            if _G.Ui == 2 then
+                
+            end
         else
             if _G.Ui == 1 then
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/XGames/Script/Universal/Ui1_Universal.lua",true))()
