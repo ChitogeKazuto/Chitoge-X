@@ -2,9 +2,13 @@ if _G.Key == "hPxNj6cAJWahK8c" then
     if game:GetService("Players").LocalPlayer.Name == "Undertale_ver" then
         if game.PlaceId == 537413528 then
             if _G.Ui == 1 then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/XGames/Script/Build%20A%20Boat/Ui1.Build%20A%20Boat.lua",true))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/XGames/Script/Build%20A%20Boat/Ui1_Build%20A%20Boat.lua",true))()
             else
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/XGames/Script/Build%20A%20Boat/Ui2.Build%20A%20Boat.lua",true))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/XGames/Script/Build%20A%20Boat/Ui2_Build%20A%20Boat.lua",true))()
+            end
+        elseif game:GetService("Workspace").AdminSounds.SmiteSound.Name == "SmiteSound" then
+            if _G.Ui == 2 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ChitogeKazuto/Chitoge-X/master/XGames/Script/Last%20Breath/Ui2_Last%20Breath.lua",true))()
             end
         else
             if _G.Ui == 1 then
