@@ -40,7 +40,7 @@ window:AddToggle({text=' Hide Smoke & Blood',callback=function(a)
         end
     end
 end})
-window:AddSlider({text='Range',min=3,max=30,callback=function(a)Range=a;end})
+window:AddSlider({text=' Range',min=3,max=30,callback=function(a)Range=a;end})
 
 local Settings = library:CreateWindow("Settings")
 
