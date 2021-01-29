@@ -132,9 +132,11 @@ end})
 
 local window = library:CreateWindow("Last Breath")
 
-window:AddToggle({text=' Enabled',callback=function(a)Enabled=a;end})
-window:AddToggle({text=' Teleport',callback=function(a)TP=a;end})
-window:AddToggle({text=' Hide Smoke & Blood',callback=function(a)
+local MiscFolder = window:AddFolder("Misc")
+
+MiscFolder:AddToggle({text=' Enabled',callback=function(a)Enabled=a;end})
+MiscFolder:AddToggle({text=' Teleport',callback=function(a)TP=a;end})
+MiscFolder:AddToggle({text=' Hide Smoke & Blood',callback=function(a)
     Smoke=a;
     if not Smoke then return end
     local shit = player.Character:GetDescendants()
@@ -144,7 +146,7 @@ window:AddToggle({text=' Hide Smoke & Blood',callback=function(a)
         end
     end
 end})
-window:AddSlider({text=' Range',min=3,max=30,callback=function(a)Range=a;end})
+MiscFolder:AddSlider({text=' Range',min=3,max=30,callback=function(a)Range=a;end})
 
 local Settings = library:CreateWindow("Settings")
 
