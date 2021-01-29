@@ -132,7 +132,7 @@ end})
 
 local window = library:CreateWindow("Last Breath")
 
-local MiscFolder = window:AddFolder("Misc")
+local MiscFolder = window:AddFolder("Kill Aura")
 
 MiscFolder:AddToggle({text=' Enabled',callback=function(a)Enabled=a;end})
 MiscFolder:AddToggle({text=' Teleport',callback=function(a)TP=a;end})
